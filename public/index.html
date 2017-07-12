@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro</title>
+  <link rel="stylesheet" type="text/css" href="css/pomodoro.css">
+  <script src="https://use.fontawesome.com/034826498b.js"></script>
+  <script src="js/pomodoro.js"></script>
+</head>
+<body>
+<main>
+  <div class="wrapper">
+    <h1>Pomodoro</h1>
+
+    <div id="timer">
+      <button value="start"><i class="fa fa-play"></i></button>
+      <button value="stop"><i class="fa fa-stop"></i></button>
+      <button value="pause"><i class="fa fa-pause"></i></button>
+      <div id="phase">session</div>
+      <div id="screen">25:00</div>
+    </div>
+
+    <div class="panel">
+      <div class="session">
+
+        <div class="length-control">
+          <button value="session minus"><i class="fa fa-minus"></i></button>
+          <div class="length" id="session-length">25</div>
+          <button value="session plus"><i class="fa fa-plus"></i></button>
+        </div>
+        <h2>Session length</h2>
+      </div>
+      <div class="break">
+
+        <div class="length-control">
+          <button value="break minus"><i class="fa fa-minus"></i></button>
+          <div class="length" id="break-length">5</div>
+          <button value="break plus"><i class="fa fa-plus"></i></button>
+        </div>
+        <h2>Break length</h2>
+      </div>
+
+    </div>
+  </div>
+  <audio id="audio-session" src="https://www.soundjay.com/appliances/sounds/microwave-oven-bell-1.mp3" ></audio>
+  <audio id="audio-break" src="https://www.soundjay.com/drinks/sounds/pouring-soda-1.mp3" ></audio>
+</main>
+</body>
+</html>

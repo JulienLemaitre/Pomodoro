@@ -1,0 +1,111 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+main {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c3ecee; }
+
+h1, h2 {
+  text-align: center;
+  color: #fc6472; }
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.7em;
+  font-size: 4em; }
+
+h2 {
+  font-size: 1em; }
+
+button {
+  background-color: #eccdb3;
+  border: solid 2px #f4b2a6;
+  border-radius: 50%; }
+  button:hover {
+    background-color: #f4b2a6; }
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 350px;
+  margin-top: 50px; }
+
+.length-control, #timer {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.length-control {
+  position: relative; }
+  .length-control button {
+    height: 40px;
+    width: 40px;
+    flex-grow: 0;
+    position: absolute;
+    right: -20px;
+    color: #fc6472;
+    top: calc(50% - 20px); }
+    .length-control button:hover {
+      background-color: #bcefd0; }
+    .length-control button[value="session minus"], .length-control button[value="break minus"] {
+      left: -20px; }
+
+.length {
+  text-align: center;
+  font-size: 25px;
+  height: 100px;
+  width: 100px;
+  background-color: #fc6472;
+  color: #c3ecee;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+#timer {
+  width: 250px;
+  height: 250px;
+  margin: 20px auto 0;
+  border-radius: 50%;
+  border: 10px solid #23c8b2;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; }
+  #timer button {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    font-size: 30px;
+    color: #fc6472;
+    border-color: #23c8b2;
+    border-width: 4px;
+    background-color: #bcefd0; }
+    #timer button:hover {
+      background-color: #f4b2a6; }
+    #timer button i {
+      padding: 0 0 4px 3px; }
+    #timer button[value="start"] {
+      left: -20px;
+      top: -20px; }
+    #timer button[value="stop"] {
+      bottom: -60px; }
+      #timer button[value="stop"] i {
+        padding-left: 2px; }
+    #timer button[value="pause"] {
+      top: -20px;
+      right: -20px; }
+
+#phase {
+  color: #fc6472; }
+
+#screen {
+  color: #265782; }
